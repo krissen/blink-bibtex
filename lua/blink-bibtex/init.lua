@@ -293,6 +293,10 @@ function Source:get_completions(context, callback)
   end
 end
 
+function Source:get_trigger_characters()
+  return { '{', '@' }
+end
+
 function Source:resolve(item, callback)
   callback(item)
 end
